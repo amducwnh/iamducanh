@@ -3,35 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới Thiệu Bản Thân Của [Tên Bạn]</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f9; color: #333; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-        .contact a { margin-right: 15px; text-decoration: none; color: #007bff; }
-    </style>
+    <title>Portfolio của [Tên Bạn]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello everybody,Gọi tôi là Obito 👋</h1>
 
-        <h2>Giới Thiệu</h2>
-        <p>Tôi là một [Lập trình viên / Thiết kế / DVMXH] với [4] năm kinh nghiệm trong lĩnh vực [DVMXH].</p>
+    <header class="header">
+        <div class="logo">[Obito ]</div>
+        <nav class="navbar">
+            <a href="#about">Main from LaoCai</a>
+            <a href="#skills">Gáy</a>
+            <a href="#projects">Top 1 VN</a>
+            <a href="#contact">ig: amducwnh</a>
+        </nav>
+        <button id="theme-toggle" title="Chuyển đổi chủ đề">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
 
-        <h2>Kỹ Năng</h2>
-        <ul>
-            <li>Ngôn ngữ: HTML, JavaScript, Python></li>
-            <li>Công cụ: Git, Docker, VS Code,...</li>
-            <li>Ngôn ngữ: Tiếng Việt, Tiếng Anh,...</li>
-        </ul>
+    <main>
+        <section id="about" class="hero section">
+            <div class="hero-content">
+                <img src="https://via.placeholder.com/150" alt="Ảnh đại diện" class="profile-img">
+                <h1>Chào, tôi là [Obito]</h1>
+                <p class="tagline">Một [con người top 1 six gái:):]</p>
+                <p>Tôi là một lập trình viên, tập trung vào việc tạo ra các giải pháp [Web/Mobile/Dữ liệu] hiệu quả và thân thiện với người dùng. Mục tiêu của tôi là [ddos all for ex].</p>
+                <a href="#contact" class="btn primary-btn">Liên Hệ Với Tôi</a>
+            </div>
+        </section>
 
-        <h2>Liên Hệ</h2>
-        <p class="contact">
-            <a href="https://github.com/amducwnh" target="_blank">GitHub</a>
-            <a href="mailto:iamducwnhhh@gmail.com">Email</a>
-            <a href="https://www.facebook.com/iamducwnh" target="_blank">Facebook</a>
-        </p>
-    </div>
+        <section id="skills" class="section">
+            <h2>🛠️ Kỹ Năng Chuyên Môn</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Ngôn ngữ Lập trình</h3>
+                    <ul>
+                        <li><i class="fas fa-code"></i> Python, JavaScript, HTML, CSS, SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Frameworks/Thư viện</h3>
+                    <ul>
+                        <li><i class="fas fa-cubes"></i> React, Node.js, Django, Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Công cụ & Khác</h3>
+                    <ul>
+                        <li><i class="fas fa-tools"></i> Git/GitHub, Docker, AWS (S3, EC2)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section dark-bg">
+            <h2>📂 Các Dự Án Nổi Bật</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Trang E-commerce Mẫu</h3>
+                    <p>Xây dựng một nền tảng thương mại điện tử hoàn chỉnh sử dụng React và Node.js, bao gồm tính năng thanh toán, quản lý giỏ hàng.</p>
+                    <div class="project-links">
+                        <a href="[Link Live]" target="_blank"><i class="fas fa-external-link-alt"></i> Xem Live</a>
+                        <a href="[Link Repo]" target="_blank"><i class="fab fa-github"></i> Mã nguồn</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Hệ thống Quản lý Nhiệm vụ</h3>
+                    <p>Phát triển ứng dụng quản lý nhiệm vụ (To-do app) với Django, tích hợp cơ sở dữ liệu PostgreSQL.</p>
+                </div>
+                </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>📬 Liên Hệ</h2>
+            <p>Hãy liên hệ với tôi qua email hoặc kết nối qua các nền tảng mạng xã hội!</p>
+            <div class="contact-links">
+                <a href="mailto:iamducwnhhh@gmail.com" target="_blank" title="Gửi Email"><i class="fas fa-envelope"></i> Email</a>
+                <a href="[Link Facebook]" target="_blank" title="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="[Link Discord]" target="_blank" title="Discord"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Portfolio của [Obito].</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
